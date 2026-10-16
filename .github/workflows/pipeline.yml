@@ -21,7 +21,7 @@ jobs:
         id: build-image
         uses: redhat-actions/buildah-build@v3
         with:
-          image: hammer
+          image: ${{ github.event.repository.name }}
           tags: latest ${{ github.sha }}
           containerfiles: |
             ./Dockerfile
