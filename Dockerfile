@@ -1,5 +1,6 @@
 FROM docker.io/rockylinux/rockylinux:9
 RUN \
+  dnf install -y rpm-sign && \
   dnf install -y 'dnf-command(config-manager)' && \
   dnf install -y \
     https://yum.theforeman.org/releases/3.18/el9/x86_64/foreman-release.rpm \

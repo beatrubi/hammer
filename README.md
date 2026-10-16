@@ -1,6 +1,6 @@
 # Hammer
 
-Container wrapping hammer command for Foreman/Katello.
+Container wrapping hammer command for Foreman/Katello. In addition, we add the `rpmsign` command.
 
 Ping server:
 ```bash
